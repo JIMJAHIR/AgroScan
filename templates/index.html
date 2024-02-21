@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/AgroScan.png') }}" alt="AgroScan_logo"
+        class="AgroScan_logo">
+      <p>¡Bienvenido a AgroScan, tu solución personalizada para proteger tus cultivos y mejorar tu producción agrícola!
+      </p>
+      <br>
+      <p>En AgroScan, entendemos que la salud de tus cultivos es fundamental para tu éxito como agricultor, y estamos
+        aquí para brindarte el apoyo necesario en cada etapa del proceso. Sabemos que mantener la salud de tus cultivos
+        puede marcar la diferencia en tu cosecha y en tu negocio, y queremos ser tu socio confiable en este viaje.</p>
+      <br>
+      <p>Al acceder a nuestra plataforma, te adentrarás en un mundo de posibilidades diseñadas para hacer que tu
+        experiencia sea excepcional. Desde la detección temprana de enfermedades de las plantas hasta recomendaciones
+        precisas para su manejo, estamos comprometidos a proporcionarte herramientas efectivas para proteger y mejorar
+        la productividad de tus cultivos.</p>
+      <br>
+      <p>AgroScan no es solo una herramienta, es tu aliado en el camino hacia una agricultura más exitosa y sostenible.
+        Aquí encontrarás recursos, consejos y apoyo para hacer que tu trabajo en el campo sea más gratificante y
+        exitoso. ¡Juntos, vamos a proteger tus cultivos y llevar tu producción agrícola al siguiente nivel! ¡Únete a
+        AgroScan hoy y comienza tu viaje hacia un futuro agrícola más próspero!</p>
+
+      <div><a href="/login">Iniciar sesión</a></div>
+      <p class="enlace_visita">
+        <a href="/comunity">Nuestros Casos de Éxito</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <img src="{{ url_for('static', filename='images/img.png') }}" alt="Img Index">
+  </div>
+
+
+</body>
+
+</html>

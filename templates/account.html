@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cuenta</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d48b04ce67.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="div_left div_left_l">
+    <img src="{{ url_for('static', filename='images/AgroScan-profile.png') }}" alt="Imagen de ejemplo" class="imagen">
+  </div>
+
+  <div class="div_right_l">
+    <div class="form_profile">
+
+      <center><i class="fas fa-user"></i></center>
+
+      <h2>Create Account</h2>
+
+      <form autocomplete="off" class="form_profile_form" action="/save_profile" method="POST">
+
+        <input type="text" id="first_name" name="first_name" required placeholder="Nombre"><br>
+
+        <input type="text" id="last_name" name="last_name" required placeholder="Apellido"><br>
+
+        <input type="text" id="phone" name="phone" required placeholder="Teléfono"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '')"><br>
+
+        <input type="email" id="email" name="email" required placeholder="Correo electrónico"><br>
+
+        <input type="password" id="password" name="password" required placeholder="Contraseña"><br>
+
+        <input type="submit" value="Registrar">
+
+      </form>
+
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <title>AgroScan</title>
+</head>
+
+<body>
+  {% include 'free/header_free.html' %}
+
+  <br>
+  <h1>generator_tomato</h1> 
+
+  <div class="predecir">
+    <h1>Predicción de Enfermedades en Hojas de Tomate</h1>
+    <form method="POST" enctype="multipart/form-data" action="/prediction_tomato"> <!-- Cambia la acción del formulario -->
+      <input type="file" name="file" accept=".jpg, .jpeg, .png">
+      <input type="submit" value="Predecir">
+    </form>
+    <div id="result">{{ result }}</div>
+    <center><img id="image" src="" alt="Imagen cargada"></center>
+  </div>
+
+  {% include 'free/footer_free.html' %}
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="div_left div_left_l">
+    <img src="{{ url_for('static', filename='images/Img Login.png') }}" alt="ImgLogin" class="imagen">
+  </div>
+
+  <div class="div_right_l">
+    <div class="div_login div_login2">
+      <h2>Login Account</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text.</p>
+      <!-- Formulario de inicio de sesión -->
+      <form class="login" action="/loginUser" method="POST" autocomplete="off" >
+        <label for="user_name">User :</label>
+        <input type="text" id="user_name" name="user_name" required><br>
+
+        <label for="user_password">Password :</label>
+        <input type="password" id="user_password" name="user_password" required><br>
+
+        <input type="submit" value="Login"><br>
+      </form>
+      <p>
+        <a href="/create_account">Create Account</a>
+        <a href="/forgot_password">Forgot Password?</a>
+      </p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

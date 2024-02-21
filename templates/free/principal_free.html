@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <title>AgroScan</title>
+</head>
+
+<body>
+  {% include 'free/header_free.html' %}
+
+  <div class="banner">
+    <div class="banner-content">
+      <h2>¡Nutre tu cuerpo, nutre tu vida!</h2>
+      <p>"En NutriPlan, creemos en el poder de la nutrición para transformar vidas. Cada elección alimenticia es una
+        oportunidad para cuidar de ti mismo y alcanzar tus metas. Únete a nosotros en este viaje hacia una vida más
+        saludable y vibrante. ¡Empieza hoy mismo y haz que cada bocado cuente!"</p>
+    </div>
+    <div class="banner-image">
+      <img src="{{ url_for('static', filename='images/img_user5.png') }}" alt="Imagen del banner">
+    </div>
+  </div>
+
+  <div class="sections">
+    <div class="info-cliente">
+      <h3>Datos Físicos</h3>
+      <ul>
+        <li><strong>Altura:</strong> 170 cm</li>
+        <li><strong>Edad:</strong> 30 años</li>
+        <li><strong>Peso:</strong> 65 kg</li>
+        <!-- Agrega más datos físicos según sea necesario -->
+      </ul>
+    </div>
+  
+    <div class="plan-alimenticio">
+      <h3>Plan Alimenticio</h3>
+      <ul>
+        <li>Desayuno: Avena con frutas</li>
+        <li>Almuerzo: Ensalada de pollo</li>
+        <li>Cena: Salmón a la parrilla con vegetales</li>
+        <!-- Agrega más comidas del plan alimenticio según sea necesario -->
+      </ul>
+    </div>
+  
+    <div class="tarjeta">
+      <h3>Consejo de Salud</h3>
+      <p>Mantén tu cuerpo hidratado bebiendo al menos 8 vasos de agua al día. El agua es esencial para mantener una buena salud y ayudar a tu cuerpo a funcionar correctamente.</p>
+    </div>
+  </div>
+  
+
+  </div>
+
+
+
+
+  {% include 'free/footer_free.html' %}
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+<link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+  rel="stylesheet">
+<script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+
+<nav class="navbar">
+
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/tandia_logo_w.png') }}" alt="Logo de la empresa">
+  </div>
+
+  <div class="menu">
+    <ul>
+      <li><a>Aun no</a></li>
+      <li><a href="">Determinar Enfermedad</a>
+        <ul>
+          <li><a href="{{ url_for('generator_coffe') }}"> IA Coffe</a></li>
+          <li><a href="{{ url_for('generator_tomato') }}"> IA Tomato</a></li>
+          <li><a href="{{ url_for('generator_corn') }}"> IA Corn</a></li>
+          <li><a href="{{ url_for('generator_rice') }}"> IA Rice</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="user-info">
+    <p>Bienvenido{% if first_name %}
+    <p>{{ first_name }}</p>
+    {% endif %}</p>
+    <a href="/cerrarSesion"><i class="fa-solid fa-right-from-bracket"></i></a>
+  </div>
+</nav>
