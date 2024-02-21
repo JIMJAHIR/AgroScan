@@ -39,6 +39,13 @@ def menu():
 
     return render_template('free/principal_free.html',user_id=user_id,first_name=first_name,last_name=last_name,phone=phone,email=email,password=password)
 
+
+#Redireccion Generator Coffe
+@app.route('/store')
+def store():
+    return render_template('free/store.html')
+
+
 #Redireccion Generator Coffe
 @app.route('/generator_coffe')
 def generator_coffe():

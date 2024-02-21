@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p>La enfermedad del "Miner de la Hoja" o "Minador de la Hoja" es una enfermedad del café causada por un pequeño
+        insecto llamado "minador de hojas" (Liriomyza spp.). Estos insectos ponen sus huevos dentro de las hojas de la
+        planta de café, y las larvas que emergen de los huevos se alimentan del tejido interno de las hojas, creando
+        túneles o galerías características que se pueden ver como líneas o manchas en las hojas.</p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Los síntomas típicos de la enfermedad incluyen manchas amarillas o plateadas en las hojas, que eventualmente
+        pueden volverse marrones debido al daño causado por las larvas del minador. Aunque esta enfermedad rara vez mata
+        la planta de café, puede debilitarla y disminuir su rendimiento si la infestación es severa.</p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Para controlar el minador de la hoja, se pueden utilizar métodos como la poda de las hojas afectadas, el
+        control biológico mediante la introducción de sus enemigos naturales, y en algunos casos, el uso de insecticidas
+        específicos. La gestión integrada de plagas es clave para manejar eficazmente esta enfermedad y proteger la
+        salud de las plantas de café.</p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
