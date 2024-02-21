@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mancha Bacteriana en Tomate - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p>También conocida como tizón bacteriano del tomate, es una enfermedad causada por la bacteria Xanthomonas spp.
+        Afecta principalmente a las hojas, tallos y frutos del tomate, y puede causar importantes pérdidas en el rendimiento
+        y la calidad de la cosecha</p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Manchas en las hojas: Las manchas son inicialmente pequeñas, de color verde claro o amarillo,
+        y de forma angular. Con el tiempo, las manchas se agrandan, se vuelven de color marrón o negro, y pueden tener 
+        un halo amarillo. Las hojas con manchas severas pueden caerse prematuramente.
+        Manchas en los tallos: Las manchas en los tallos son similares a las de las hojas, pero pueden ser más alargadas. 
+        En algunos casos, los tallos pueden agrietarse o romperse.
+        Manchas en los frutos: Las manchas en los frutos son inicialmente pequeñas y de color verde claro. Con el tiempo,
+        las manchas se agrandan, se vuelven de color marrón o negro, y pueden hundirse. Los frutos con manchas severas 
+        pueden ser deformes y no ser aptos para la venta.
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Eliminar las plantas enfermas: Las plantas con síntomas severos de la enfermedad deben ser eliminadas
+        del campo y quemadas. Esto ayudará a evitar la propagación de la bacteria a otras plantas.
+        Aplicar bactericidas: En algunos casos, puede ser necesario utilizar bactericidas para controlar la enfermedad.
+        Es importante consultar con un ingeniero agrónomo para elegir el bactericida adecuado y seguir las instrucciones 
+        de uso cuidadosamente.
+        Practicar un buen manejo del cultivo: Esto incluye la adecuada fertilización, riego y poda. Las plantas sanas 
+        son más resistentes a las enfermedades.
+        Evitar el riego por aspersión: Si es posible, utilizar riego por goteo. El riego por aspersión puede ayudar a la
+        propagación de la bacteria.
+        Desinfectar las herramientas y equipos de trabajo: La bacteria puede sobrevivir en las herramientas y equipos de trabajo,
+        por lo que es importante desinfectarlos después de cada uso.
+        Evitar el contacto con plantas enfermas: La bacteria puede transmitirse de una planta a otra por contacto, por lo que
+        es importante evitar tocar las plantas enfermas.
+        Mantener el campo limpio y libre de malezas: Las malezas pueden servir como huéspedes de la bacteria, por lo que es 
+        importante mantener el campo limpio
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

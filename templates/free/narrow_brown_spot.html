@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cercosporiosis en Arroz - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad fúngica que afecta al arroz y es causada por el hongo Cercospora oryzae. Este 
+            hongo puede afectar las hojas, los tallos y las espigas del arroz.
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Manchas estrechas de color marrón: Aparecen manchas alargadas y estrechas de 
+        color marrón oscuro o negro en las hojas de arroz.
+        Lesiones con bordes definidos: Las manchas tienen bordes bien definidos y pueden estar rodeadas 
+        por un halo amarillento o clorótico.
+        Distribución en las hojas: Las lesiones suelen desarrollarse a lo largo de las venas de las 
+        hojas, extendiéndose gradualmente a medida que la enfermedad progresa.
+        Marchitamiento y muerte del tejido foliar: Con el tiempo, las hojas afectadas pueden 
+        marchitarse, secarse y morir, lo que puede afectar la capacidad de la planta para realizar la 
+        fotosíntesis y reducir el rendimiento del cultivo.      
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Uso de variedades resistentes: Utiliza variedades de arroz que sean resistentes
+        a la Narrow Brown Spot cuando sea posible. Consulta con un experto en agricultura para obtener 
+        recomendaciones sobre variedades resistentes disponibles en tu área.
+        Rotación de cultivos: Practica la rotación de cultivos para reducir la acumulación de esporas 
+        de hongos en el suelo. Evita plantar arroz en los mismos campos año tras año y rota con cultivos
+        que no sean susceptibles a la Narrow Brown Spot.
+        Control de malezas: Mantén una buena gestión de malezas para reducir la competencia de las 
+        malezas y mejorar la circulación de aire alrededor de las plantas de arroz, lo que puede ayudar 
+        a reducir la incidencia de la enfermedad.
+        Aplicación de fungicidas: En casos severos, el uso de fungicidas puede ser necesario para 
+        controlar la Narrow Brown Spot. Consulta con un experto en agricultura para obtener 
+        recomendaciones sobre qué productos utilizar y cómo aplicarlos de manera efectiva y segura.
+        Manejo del agua de riego: Evita el riego por aspersión, ya que puede favorecer la propagación 
+        del hongo. En su lugar, utiliza métodos de riego que eviten mojar las hojas tanto como sea 
+        posible.
+        Eliminación de restos de cultivos: Después de la cosecha, elimina y destruye adecuadamente los 
+        restos de cultivos de arroz para reducir la cantidad de esporas de hongos presentes en el campo.
+        Monitoreo regular: Realiza inspecciones periódicas de tus cultivos de arroz para detectar 
+        cualquier signo temprano de Narrow Brown Spot y tomar medidas preventivas o correctivas de 
+        manera oportuna                                 
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoma en Café - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p>También conocida como "quema del cafeto" o "muerte descendente", 
+        es una enfermedad fúngica causada por el hongo Phoma costarricensis. Esta enfermedad afecta principalmente 
+        a las plantas de café, causando daños en las hojas, tallos y frutos</p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >•	Manchas de color marrón oscuro a casi negro en las hojas, tallos y frutos jóvenes.
+        Las manchas pueden crecer y fusionarse, cubriendo grandes áreas de tejido vegetal.
+        Las hojas afectadas se marchitan y caen.
+        Los tallos afectados pueden morir, lo que da lugar a la "muerte descendente" de la planta.
+        Los frutos afectados pueden ser deformes y no madurar adecuadamente
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >•	Eliminación de tejido infectado: Retire y destruya las partes de la planta 
+        afectadas por la enfermedad, como hojas, tallos y frutos. Esto ayudará a evitar la propagación del hongo.
+        Manejo del riego: Evite el exceso de riego y asegure un buen drenaje del suelo. La alta humedad favorece el desarrollo del hongo.
+        Poda: Realice podas ligeras y sanitarias para mejorar la circulación del aire y la penetración de la luz solar en el cafetal.
+        Nutrición: Mantenga un programa de fertilización adecuado para fortalecer las plantas y mejorar su resistencia a la enfermedad.
+        Fungicidas: En casos severos, se puede utilizar fungicidas para controlar la enfermedad. Es importante consultar con un 
+        especialista en agronomía para seleccionar el fungicida adecuado y seguir las instrucciones de uso cuidadosamente.
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

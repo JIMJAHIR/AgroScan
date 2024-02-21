@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roya Común en Maíz - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad común del maíz causada por el hongo Puccinia sorghi. Este hongo se desarrolla en condiciones 
+            de alta humedad y temperaturas moderadas, propagándose a través de esporas transportadas por el viento. La 
+            roya común puede causar pérdidas significativas en los rendimientos del maíz si no se controla adecuadamente.
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Pústulas en las hojas: Se desarrollan pequeñas protuberancias de color marrón o rojizo en 
+        la superficie de las hojas del maíz. Estas pústulas contienen esporas del hongo y pueden aparecer en ambas 
+        caras de la hoja.
+        Coloración anormal de las hojas: Las hojas afectadas pueden presentar un color verde oscuro o bronceado debido 
+        a la presencia de las pústulas de la roya.
+        Decoloración y marchitamiento de las hojas: Con el tiempo, las hojas afectadas pueden marchitarse, secarse y 
+        morir prematuramente, lo que puede reducir la capacidad de la planta para realizar la fotosíntesis y afectar 
+        el rendimiento del cultivo.
+        Deformación de las hojas: Las hojas infectadas pueden volverse rígidas o deformadas, afectando la apariencia 
+        general de la planta.
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Uso de variedades resistentes: La mejor manera de prevenir la Common Rust es utilizar 
+        variedades de maíz que sean resistentes a esta enfermedad. Consulta con un agrónomo o un proveedor de 
+        semillas para obtener recomendaciones sobre variedades que sean adecuadas para tu área y que tengan 
+        resistencia a la roya común.
+        Rotación de cultivos: La rotación de cultivos puede ayudar a reducir la incidencia de la Common Rust al 
+        interrumpir el ciclo de vida del hongo. Evita plantar maíz en los mismos campos año tras año y rota con 
+        cultivos que no sean susceptibles a la roya común.
+        Control de malezas: Las malezas pueden actuar como reservorios de enfermedades, incluida la Common Rust. 
+        Por lo tanto, mantener una buena gestión de malezas puede ayudar a reducir la propagación de la enfermedad.
+        Manejo de residuos de cultivos: Después de la cosecha, asegúrate de eliminar y destruir adecuadamente los 
+        restos de cultivos infectados para reducir la cantidad de esporas del hongo presentes en el campo.
+        Aplicación de fungicidas: En casos severos, el uso de fungicidas puede ser necesario para controlar la 
+        Common Rust. Consulta con un experto en agricultura para obtener recomendaciones sobre qué productos 
+        utilizar y cómo aplicarlos de manera efectiva y segura.
+        Monitoreo regular: Realiza inspecciones periódicas de tus cultivos de maíz para detectar cualquier signo 
+        temprano de Common Rust y tomar medidas preventivas o correctivas de manera oportuna.
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

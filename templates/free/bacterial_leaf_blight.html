@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tizon Bacteriano en Arroz - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad bacteriana del arroz que puede causar daños significativos en los cultivos, especialmente 
+            en regiones donde las condiciones son favorables para el desarrollo de la bacteria
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Manchas foliares alargadas: Aparecen manchas alargadas de color marrón o bronceado en 
+        las hojas de arroz. Estas manchas pueden tener un aspecto húmedo y oleoso en condiciones de alta humedad.
+        Coalescencia de manchas: Con el tiempo, las manchas individuales pueden fusionarse para formar áreas más 
+        grandes de daño en las hojas.
+        Necrosis y marchitamiento de las hojas: Las hojas afectadas pueden marchitarse, volverse amarillas y 
+        finalmente morir prematuramente, lo que puede reducir el rendimiento del cultivo.
+        Manchas en las vainas y en el tallo: En casos severos, la enfermedad puede afectar también las vainas y 
+        el tallo del arroz, causando manchas necróticas y debilitando la planta.
+        Fracaso en la formación de panículas: En casos graves de BLB, la enfermedad puede afectar la formación 
+        de panículas, lo que resulta en una reducción significativa del rendimiento del arroz.        
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Uso de variedades resistentes: Utiliza variedades de arroz que sean resistentes a la 
+        Bacterial Leaf Blight cuando sea posible. Consulta con un experto en agricultura para obtener 
+        recomendaciones sobre variedades resistentes disponibles en tu área.
+        Rotación de cultivos: Practica la rotación de cultivos para reducir la acumulación de la bacteria en 
+        el suelo. Evita plantar arroz en los mismos campos año tras año y rota con cultivos que no sean 
+        susceptibles a la BLB.
+        Control de malezas: Mantén una buena gestión de malezas para reducir la competencia de las malezas y 
+        mejorar la circulación de aire alrededor de las plantas de arroz, lo que puede ayudar a reducir la 
+        incidencia de la enfermedad.
+        Aplicación de antibióticos bacterianos: En casos severos, el uso de antibióticos bacterianos puede ser
+        necesario para controlar la Bacterial Leaf Blight. Los productos a base de cobre son comúnmente 
+        utilizados para el control de enfermedades bacterianas en los cultivos de arroz. Sin embargo, es 
+        importante seguir las recomendaciones de aplicación y seguridad del producto.
+        Manejo del agua de riego: Evita el riego por aspersión, ya que puede favorecer la propagación de la 
+        bacteria. En su lugar, utiliza métodos de riego que eviten mojar las hojas tanto como sea posible.
+        Eliminación de restos de cultivos: Después de la cosecha, elimina y destruye adecuadamente los restos 
+        de cultivos de arroz para reducir la cantidad de bacterias presentes en el campo.
+        Monitoreo regular: Realiza inspecciones periódicas de tus cultivos de arroz para detectar cualquier 
+        signo temprano de Bacterial Leaf Blight y tomar medidas preventivas o correctivas de manera oportuna.              
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

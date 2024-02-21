@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tizon en Maíz - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad fúngica del maíz causada por el hongo Ascochyta maydis. Este hongo puede sobrevivir en 
+            los residuos de los cultivos de maíz y se propaga principalmente a través de esporas transportadas por el 
+            viento o salpicaduras de agua
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Lesiones foliares: Aparecen lesiones de forma ovalada o irregular en las hojas de maíz,
+        inicialmente de color marrón claro que con el tiempo se oscurecen y pueden formar un borde amarillento
+        alrededor de la lesión.
+        Lesiones en el tallo y la mazorca: Además de afectar a las hojas, la enfermedad puede causar lesiones 
+        en los tallos y en las mazorcas del maíz, lo que puede reducir el rendimiento del cultivo.
+        Marchitamiento y muerte prematura de las hojas: Las hojas afectadas pueden marchitarse, secarse y morir 
+        prematuramente, lo que puede debilitar la planta y reducir su capacidad para producir mazorcas.
+        Manchas necróticas en las hojas jóvenes: En casos severos, las hojas jóvenes pueden desarrollar manchas 
+        necróticas que eventualmente se expanden y fusionan, afectando una gran área de la hoja.
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Uso de variedades resistentes: Utiliza variedades de maíz que sean resistentes a la 
+        Mancha de Ascochyta cuando sea posible. Consulta con un proveedor de semillas o un experto en agricultura 
+        para obtener recomendaciones sobre variedades resistentes disponibles en tu área.
+        Rotación de cultivos: Practica la rotación de cultivos para reducir la acumulación de esporas de hongos 
+        en el suelo. Evita plantar maíz en los mismos campos año tras año y rota con cultivos que no sean 
+        susceptibles a la Mancha de Ascochyta.
+        Control de malezas: Mantén una buena gestión de malezas para reducir la competencia de las malezas y 
+        mejorar la circulación de aire alrededor de las plantas de maíz, lo que puede ayudar a reducir la 
+        incidencia de la enfermedad.
+        Aplicación de fungicidas: En casos severos, el uso de fungicidas puede ser necesario para controlar la 
+        Mancha de Ascochyta. Consulta con un experto en agricultura para obtener recomendaciones sobre qué 
+        productos utilizar y cómo aplicarlos de manera efectiva y segura.
+        Manejo de residuos de cultivos: Después de la cosecha, elimina y destruye adecuadamente los restos de 
+        cultivos de maíz para reducir la cantidad de esporas de hongos presentes en el campo.
+        Monitoreo regular: Realiza inspecciones periódicas de tus cultivos de maíz para detectar cualquier signo 
+        temprano de la Mancha de Ascochyta y tomar medidas preventivas o correctivas de manera oportuna.        
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

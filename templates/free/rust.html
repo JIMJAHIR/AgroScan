@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rust en Café - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p>La enfermedad del cafeto conocida como roya del cafeto (también llamada óxido del cafeto o la roya) es una 
+        enfermedad fúngica causada por el hongo Hemileia vastatrix. Es una de las enfermedades más devastadoras del 
+        cafeto, con la capacidad de reducir la producción de café hasta en un 80% si no se controla adecuadamente.</p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Manchas amarillas en la superficie superior de las hojas.
+        Pústulas anaranjadas o amarillas en la superficie inferior de las hojas.
+        Las hojas se secan y caen prematuramente.
+        Los tallos y frutos también pueden verse afectados
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Utilizar variedades de café resistentes a la roya del cafeto.
+        Eliminar y destruir las hojas y ramas infectadas.
+        Aplicar fungicidas preventivos y curativos.
+        Mantener una buena ventilación en el cafetal.
+        Mejorar el drenaje del suelo.
+        Aplicar un programa de fertilización adecuado</p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

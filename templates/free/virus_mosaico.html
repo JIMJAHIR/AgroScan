@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virus Mosaico en Tomate - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p> 
+            Es una enfermedad viral causada por diferentes virus, incluyendo el virus del mosaico del tomate (ToMV),
+            el virus del mosaico del pepino (CMV) y el virus del mosaico del tabaco (TMV), entre otros. Estos virus 
+            pueden infectar a las plantas de tomate y causar síntomas característicos en las hojas y los frutos.
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Mosaico en las hojas: Las hojas de las plantas infectadas pueden
+        mostrar un patrón de mosaico, que consiste en manchas de diferentes tonalidades de 
+        verde y amarillo. Este patrón puede ser irregular y variegado.
+        Deformación de las hojas: Las hojas infectadas pueden volverse deformes, rizadas 
+        o enrolladas.
+        Reducción del crecimiento: Las plantas infectadas pueden mostrar un crecimiento 
+        reducido y un desarrollo deficiente en comparación con las plantas sanas.
+        Frutos deformados: Los frutos de las plantas infectadas pueden desarrollar 
+        deformaciones y manchas, y en algunos casos, pueden ser más pequeños de lo normal.
+        </p>
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Control de insectos vectores: Algunos virus del mosaico del tomate 
+        son transmitidos por insectos, como pulgones y ácaros. Por lo tanto, es importante 
+        controlar la población de estos insectos vectores mediante prácticas de manejo 
+        integrado de plagas.
+        Control de malezas: Algunas malezas pueden actuar como reservorios de virus del 
+        mosaico del tomate. Por lo tanto, es importante mantener una buena gestión de 
+        malezas en y alrededor de los cultivos de tomate para reducir la propagación de 
+        la enfermedad.
+        Uso de variedades resistentes: Algunas variedades de tomate pueden ser resistentes 
+        a ciertos virus del mosaico. Por lo tanto, al seleccionar las variedades para el 
+        cultivo, es recomendable elegir aquellas que sean resistentes a los virus del 
+        mosaico del tomate prevalentes en tu área.
+        Eliminación de plantas infectadas: Retira y desecha adecuadamente las plantas de 
+        tomate infectadas para prevenir la propagación de la enfermedad a otras plantas.
+        Prácticas de saneamiento: Lava y desinfecta las herramientas de jardinería y otros 
+        equipos después de manipular plantas infectadas para evitar la propagación del 
+        virus a otras áreas.
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

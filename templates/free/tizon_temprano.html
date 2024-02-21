@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tizón Temprano en Tomate - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad fúngica común que afecta a los tomates. Es causada por el hongo Alternaria solani. 
+            El tizón temprano puede causar defoliación grave, desfoliación y daño a los frutos
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Manchas marrones o negras en las hojas
+        Los anillos concéntricos en las manchas
+        Marchitez y caída de las hojas
+        Lesiones en los tallos y los frutos
+        Pudrición de la fruta
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Corte las hojas y frutos que muestren síntomas de la enfermedad, 
+        como manchas marrones o negras, anillos concéntricos, marchitez o pudrición.
+        Asegúrese de eliminar todas las partes afectadas de la planta, incluyendo las que han caído al suelo.
+        Deseche las partes infectadas de la planta en una bolsa de basura sellada para 
+        evitar la propagación de la enfermedad.
+        El tizón temprano prospera en ambientes húmedos y con poca circulación de aire.
+        Pode las plantas para mejorar la circulación del aire y permitir que las hojas se sequen 
+        más rápidamente después del riego.
+        Si la enfermedad es grave o si las medidas culturales no son suficientes, puede ser necesario 
+        aplicar un fungicida.
+        Elija un fungicida que esté etiquetado para el control del tizón temprano del tomate.
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
