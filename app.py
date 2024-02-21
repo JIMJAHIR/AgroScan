@@ -26,6 +26,11 @@ def login():
 def create_account():
     return render_template('account.html')
 
+#Redireccion comunity
+@app.route('/comunity')
+def comunity():
+    return render_template('comunity.html')
+
 
 #Redireccion Menu
 @app.route('/menu')
