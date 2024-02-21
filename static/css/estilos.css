@@ -458,29 +458,34 @@ footer {
 }
 
 .sections {
-  width: 90%;
+  width: 95%;
   margin: 40px auto; /* Agrega margen automático a los lados para centrar */
   display: flex;
   justify-content: space-between; /* Distribuye el espacio entre las tarjetas */
 } 
 
 
-.info-cliente,
-.plan-alimenticio,
-.tarjeta {
+.tarjeta,
+.tarjeta1,
+.tarjeta2, 
+.tarjeta3 {
   flex: 1;
-  padding: 20px; /* Agrega relleno para separar el contenido del borde */
+  padding: 10px; /* Agrega relleno para separar el contenido del borde */
   background-color: rgb(153, 103, 103);
 }
 
 /* Añade margen izquierdo a la primera tarjeta */
-.info-cliente {
+.tarjeta1 {
   margin-right: 20px;
 }
 
 /* Añade margen derecho a la tercera tarjeta */
-.tarjeta:last-child {
-  margin-left: 20px;
+.tarjeta2 {
+  margin-right: 20px;
+}
+
+.tarjeta3 {
+  margin-right: 20px;
 }
 
 
