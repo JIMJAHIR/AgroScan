@@ -20,7 +20,21 @@
       <input type="file" name="file" accept=".jpg, .jpeg, .png">
       <input type="submit" value="Predecir">
     </form>
-    <div id="result">{{ result }}</div>
+    <div id="result">
+      {% if result == 'bacterial_leaf_blight'  %}
+      <a>Enfermedad: Tizon Bacteriano del Arroz</a><a href="{{ url_for('result_bacterial_leaf_blight') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'brown_spot' %}
+      <a>Enfermedad: Mancha Marrón</a><a href="{{ url_for('result_brown_spot') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'leaf_blast' %}
+      <a>Enfermedad: Explosión de Arroz</a><a href="{{ url_for('result_leaf_blast') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'leaf_scald' %}
+      <a>Enfermedad: Rincosporiosis</a><a href="{{ url_for('result_leaf_scald') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'narrow_brown_spot' %}
+      <a>Enfermedad: Cercosporiosis</a><a href="{{ url_for('result_narrow_brown_spot') }}" target="_blank"> Ver Tratamiento</a>
+      {% else %}
+      <a>Hoja Sana</a>
+      {% endif %}
+    </div>
     <center><img id="image" src="" alt="Imagen cargada"></center>
   </div>
 

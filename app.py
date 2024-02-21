@@ -44,21 +44,120 @@ def menu():
 def generator_coffe():
     return render_template('free/ia_coffe.html')
 
+#Redirección Miner
+@app.route('/coffe_result_miner')
+def result_miner():
+    return render_template('free/miner.html')
+
+#Redirección Rust
+@app.route('/coffe_result_rust')
+def result_rust():
+    return render_template('free/rust.html')
+
+#Redirección Phoma
+@app.route('/coffe_result_phoma')
+def result_phoma():
+    return render_template('free/phoma.html')
+
 #Redireccion Generator Tomato
 @app.route('/generator_tomato')
 def generator_tomato():
     return render_template('free/ia_tomato.html')
+
+#Redirección Mancha Bacteriana
+@app.route('/tomato_result_mancha_bacteriana')
+def result_mancha_bacteriana():
+    return render_template('free/mancha_bacteriana.html')
+
+#Redirección Tizón Temprano
+@app.route('/tomato_result_tizon_temprano')
+def result_tizon_temprano():
+    return render_template('free/tizon_temprano.html')
+
+#Redirección Tizón Tardío
+@app.route('/tomato_result_tizon_tardio')
+def result_tizon_tardio():
+    return render_template('free/tizon_tardio.html')
+
+#Redirección Molde Hoja
+@app.route('/tomato_result_molde_hoja')
+def result_molde_hoja():
+    return render_template('free/molde_hoja.html')
+
+#Redirección Septoria
+@app.route('/tomato_result_septoria')
+def result_septoria():
+    return render_template('free/septoria.html')
+
+#Redirección Acaros de Araña
+@app.route('/tomato_result_acaros_arana')
+def result_acaros_arana():
+    return render_template('free/acaros_arana.html')
+
+#Redirección Punto Objetivo
+@app.route('/tomato_result_punto_objetivo')
+def result_punto_objetivo():
+    return render_template('free/punto_objetivo.html')
+
+#Redirección Virus Mosaico
+@app.route('/tomato_result_virus_mosaico')
+def result_virus_mosaico():
+    return render_template('free/virus_mosaico.html')
+
+#Redirección Tomate Amarillo
+@app.route('/tomato_result_tomate_amarillo')
+def result_tomate_amarillo():
+    return render_template('free/tomate_amarillo.html')
 
 #Redireccion Generator Corn
 @app.route('/generator_corn')
 def generator_corn():
     return render_template('free/ia_corn.html')
 
+#Redirección Roya Comun
+@app.route('/corn_result_common_rust')
+def result_common_rust():
+    return render_template('free/common_rust.html')
+
+#Redirección Mancha Foliar Gris
+@app.route('/corn_result_gray_leaf_spot')
+def result_gray_leaf_spot():
+    return render_template('free/gray_leaf_spot.html')
+
+#Redirección Tizon
+@app.route('/corn_result_blight')
+def result_blight():
+    return render_template('free/blight.html')
+
 #Redireccion Generator Rice
 @app.route('/generator_rice')
 def generator_rice():
     return render_template('free/ia_rice.html')
 
+#Redirección Tizon Bacteriano del Arroz
+@app.route('/rice_result_bacterial_leaf_blight')
+def result_bacterial_leaf_blight():
+    return render_template('free/bacterial_leaf_blight.html')
+
+#Redirección Mancha Marrón
+@app.route('/rice_result_brown_spot')
+def result_brown_spot():
+    return render_template('free/brown_spot.html')
+
+#Redirección Explosión de arroz
+@app.route('/rice_result_leaf_blast')
+def result_leaf_blast():
+    return render_template('free/leaf_blast.html')
+
+#Redirección Rincosporiosis
+@app.route('/rice_result_leaf_scald')
+def result_leaf_scald():
+    return render_template('free/leaf_scald.html')
+
+#Redirección Cercosporiosis
+@app.route('/rice_result_narrow_brown_spot')
+def result_narrow_brown_spot():
+    return render_template('free/narrow_brown_spot.html')
 
 #Funcion Crear Usuario
 @app.route('/save_profile', methods=['POST'])

@@ -20,7 +20,17 @@
       <input type="file" name="file" accept=".jpg, .jpeg, .png">
       <input type="submit" value="Predecir">
     </form>
-    <div id="result">{{ result }}</div>
+    <div id="result">
+      {% if result == 'Common_Rust'  %}
+      <a>Enfermedad: Roya Común</a><a href="{{ url_for('result_common_rust') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Gray_Leaf_Spot' %}
+      <a>Enfermedad: Mancha Foliar Gris</a><a href="{{ url_for('result_gray_leaf_spot') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Blight' %}
+      <a>Enfermedad: Tizón</a><a href="{{ url_for('result_blight') }}" target="_blank"> Ver Tratamiento</a>
+      {% else %}
+      <a>Hoja Sana</a>
+      {% endif %}
+    </div>
     <center><img id="image" src="" alt="Imagen cargada"></center>
   </div>
 

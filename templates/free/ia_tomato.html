@@ -20,7 +20,29 @@
       <input type="file" name="file" accept=".jpg, .jpeg, .png">
       <input type="submit" value="Predecir">
     </form>
-    <div id="result">{{ result }}</div>
+    <div id="result">
+      {% if result == 'Mancha Bateriana'  %}
+      <a>Enfermedad: Mancha Bacteriana</a><a href="{{ url_for('result_mancha_bacteriana') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Tizón Temprano' %}
+      <a>Enfermedad: Tizón Temprano</a><a href="{{ url_for('result_tizon_temprano') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Tizón Tardío' %}
+      <a>Enfermedad: Tizón Tardio</a><a href="{{ url_for('result_tizon_tardio') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Molde Hoja' %}
+      <a>Enfermedad: Molde Hoja</a><a href="{{ url_for('result_molde_hoja') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Septoria' %}
+      <a>Enfermedad: Septoria</a><a href="{{ url_for('result_septoria') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Acaros de Araña' %}
+      <a>Enfermedad: Acaros de Araña</a><a href="{{ url_for('result_acaros_arana') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Punto Objetivo' %}
+      <a>Enfermedad: Punto Objetivo</a><a href="{{ url_for('result_punto_objetivo') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Virus Mosaico' %}
+      <a>Enfermedad: Virus Mosaico</a><a href="{{ url_for('result_virus_mosaico') }}" target="_blank"> Ver Tratamiento</a>
+      {% elif result == 'Tomate Amarillo' %}
+      <a>Enfermedad: Tomate Amarillo</a><a href="{{ url_for('result_tomate_amarillo') }}" target="_blank"> Ver Tratamiento</a>
+      {% else %}
+      <a>Hoja Sana</a>
+      {% endif %}
+    </div>
     <center><img id="image" src="" alt="Imagen cargada"></center>
   </div>
 
