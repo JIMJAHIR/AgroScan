@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tizón Tardío en Tomate - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad fúngica que afecta a las plantas de tomate. Es causada por el oomiceto Phytophthora 
+            infestans. El tizón tardío puede causar defoliación, pudrición de tallos y pudrición de frutos. Puede 
+            ser una enfermedad muy destructiva y puede causar pérdidas significativas en el rendimiento
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Manchas marrones o negras en las hojas
+        Lesiones marrones o negras en los tallos
+        Pudrición marrón o negra de la fruta
+        Una pelusa blanca en la parte inferior de las hojas
+        </p>
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Usando variedades de tomate resistentes a la enfermedad
+        Evitando el riego por aspersión
+        Proporcionar una buena circulación de aire
+        Aplicación de fungicidas
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

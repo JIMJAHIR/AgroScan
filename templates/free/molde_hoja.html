@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molde Hoja en Tomate - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad fúngica común que afecta a las plantas de tomate. Es causada por el hongo Cladosporium 
+            fulvum. El hongo produce esporas que pueden ser transportadas por el viento y la lluvia, lo que facilita 
+            la propagación de la enfermedad.
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Manchas marrones o amarillas en las hojas
+        Las manchas pueden agrandarse y unirse
+        Las hojas pueden marchitarse y caerse
+        La fruta puede estar manchada o deformada
+        </p>
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Prácticas de cultivo adecuadas: Mantén un buen manejo del cultivo, lo cual 
+        incluye la rotación de cultivos para evitar la acumulación de patógenos en el suelo y la 
+        selección de variedades de tomate que sean resistentes al mildiu.
+        Control de humedad: El mildiu foliar prospera en condiciones de alta humedad. Por lo tanto, 
+        es importante mantener la humedad del suelo bajo control, evitando el riego excesivo y 
+        proporcionando una buena circulación de aire alrededor de las plantas.
+        Espaciado adecuado entre plantas: Asegúrate de plantar los tomates a una distancia adecuada 
+        entre sí para permitir una buena ventilación y evitar la propagación del mildiu entre las 
+        plantas.
+        Fertilización equilibrada: Proporciona los nutrientes necesarios para fortalecer las plantas 
+        y aumentar su resistencia a las enfermedades. Un suelo equilibrado y saludable puede ayudar 
+        a prevenir la aparición del mildiu.
+        Uso de fungicidas: En casos severos, puedes recurrir al uso de fungicidas adecuados para 
+        controlar el mildiu foliar. Consulta con un experto en jardinería o agronomía para obtener 
+        recomendaciones específicas sobre qué productos utilizar y cómo aplicarlos de manera segura 
+        y efectiva.
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mancha Foliar Gris en Maíz - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad foliar que afecta a las plantas de maíz. Es causada por el hongo Cercospora zeae-maydis
+             y se propaga principalmente a través de esporas transportadas por el viento y el agua. La enfermedad 
+             puede ser especialmente problemática en áreas con condiciones cálidas y húmedas.
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Manchas foliares: Aparecen manchas de color grisáceo en las hojas de maíz, que pueden 
+        variar en tamaño y forma. Estas manchas suelen tener un centro más oscuro y bordes irregulares.
+        Desarrollo de lesiones: Con el tiempo, las lesiones causadas por la Gray Leaf Spot pueden agrandarse y 
+        fusionarse, formando áreas necróticas más grandes en las hojas.
+        Decoloración de las hojas: Las hojas afectadas pueden volverse amarillas o marrones alrededor de las 
+        lesiones, lo que puede provocar una pérdida de área foliar y afectar la capacidad de la planta para 
+        realizar la fotosíntesis.
+        Marchitamiento y defoliación prematura: En casos severos, las hojas afectadas pueden marchitarse, 
+        secarse y caer prematuramente de la planta, lo que puede reducir el rendimiento del cultivo
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Uso de variedades resistentes: Utilizar variedades de maíz que sean resistentes o 
+        tolerantes a la Gray Leaf Spot puede ser una estrategia efectiva para prevenir la enfermedad. 
+        Consulta con un agrónomo o un proveedor de semillas para obtener recomendaciones sobre variedades 
+        adecuadas para tu área.
+        Rotación de cultivos: La rotación de cultivos puede ayudar a reducir la incidencia de la Gray Leaf 
+        Spot al interrumpir el ciclo de vida del hongo. Evita plantar maíz en los mismos campos año tras 
+        año y rota con cultivos que no sean susceptibles a la enfermedad.
+        Control de malezas: Mantén una buena gestión de malezas para reducir la competencia por recursos y 
+        evitar la creación de un ambiente favorable para el desarrollo de la enfermedad.
+        Aplicación de fungicidas: En casos severos, el uso de fungicidas puede ser necesario para controlar 
+        la Gray Leaf Spot. Consulta con un experto en agricultura para obtener recomendaciones sobre qué 
+        productos utilizar y cómo aplicarlos de manera efectiva y segura.
+        Manejo de residuos de cultivos: Después de la cosecha, elimina y destruye adecuadamente los restos 
+        de cultivos infectados para reducir la cantidad de esporas del hongo presentes en el campo y 
+        prevenir la propagación de la enfermedad en la próxima temporada de cultivo.
+        Monitoreo regular: Realiza inspecciones periódicas de tus cultivos de maíz para detectar cualquier 
+        signo temprano de Gray Leaf Spot y tomar medidas preventivas o correctivas de manera oportuna.
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

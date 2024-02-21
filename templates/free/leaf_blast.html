@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explosión en Arroz - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p>
+            Es una enfermedad fúngica que afecta al arroz, causada por el hongo Pyricularia oryzae. Es una de las 
+            enfermedades más devastadoras del arroz, ya que puede causar pérdidas significativas en el rendimiento 
+            del cultivo si no se controla adecuadamente
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Lesiones en las hojas: Aparecen manchas de forma ovalada o irregular en las hojas 
+        de arroz, que inicialmente son de color verde oscuro o grisáceo y luego se tornan blancas o grises 
+        con un centro oscuro.
+        Extensión rápida de las lesiones: Las lesiones pueden expandirse rápidamente, afectando grandes áreas 
+        de las hojas y causando necrosis en el tejido foliar.
+        Muerte de tejido foliar: Las hojas afectadas pueden marchitarse, secarse y morir prematuramente debido 
+        a la infección fúngica, lo que puede reducir significativamente el rendimiento del cultivo.
+        Lesiones en otras partes de la planta: Además de las hojas, la enfermedad también puede afectar los 
+        tallos, vainas y espigas del arroz, lo que puede afectar la calidad y la cantidad de los granos 
+        producidos.
+        Formación de esporas: En condiciones húmedas, el hongo puede producir esporas en las lesiones de las 
+        hojas, que se propagan fácilmente a otras plantas y partes de la misma planta.   
+        </p>
+
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Uso de variedades resistentes: Utiliza variedades de arroz que sean resistentes a la 
+        leaf blast cuando sea posible. Consulta con un experto en agricultura para obtener recomendaciones 
+        sobre variedades resistentes disponibles en tu área.
+        Rotación de cultivos: Practica la rotación de cultivos para reducir la acumulación de esporas de 
+        hongos en el suelo. Evita plantar arroz en los mismos campos año tras año y rota con cultivos que 
+        no sean susceptibles a la leaf blast.
+        Control de malezas: Mantén una buena gestión de malezas para reducir la competencia de las malezas 
+        y mejorar la circulación de aire alrededor de las plantas de arroz, lo que puede ayudar a reducir 
+        la incidencia de la enfermedad.
+        Aplicación de fungicidas: En casos severos, el uso de fungicidas puede ser necesario para controlar 
+        la leaf blast. Consulta con un experto en agricultura para obtener recomendaciones sobre qué 
+        productos utilizar y cómo aplicarlos de manera efectiva y segura.
+        Manejo del agua de riego: Evita el riego por aspersión, ya que puede favorecer la propagación del 
+        hongo. En su lugar, utiliza métodos de riego que eviten mojar las hojas tanto como sea posible.
+        Eliminación de restos de cultivos: Después de la cosecha, elimina y destruye adecuadamente los 
+        restos de cultivos de arroz para reducir la cantidad de esporas de hongos presentes en el campo.
+        Monitoreo regular: Realiza inspecciones periódicas de tus cultivos de arroz para detectar cualquier 
+        signo temprano de leaf blast y tomar medidas preventivas o correctivas de manera oportuna.                  
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

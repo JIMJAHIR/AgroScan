@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomate Amarillo en Tomate - AgroScan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="div_left">
+    <div class="contenido">
+      <img src="{{ url_for('static', filename='images/miner.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+        <p> 
+            Es causada por un virus transmitido principalmente por moscas blancas (Bemisia tabaci). Este virus 
+            ataca las plantas de tomate, causando graves daños en la producción y calidad de los frutos.
+        </p>
+      <br>
+
+      <div><a href="/store">Ir a la Tienda</a></div>
+    </div>
+  </div>
+
+  <div class="div_right">
+    <div class="contenido">
+
+      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Clorosis foliar: Las hojas de las plantas infectadas muestran un 
+        color amarillo pálido o incluso blanco, especialmente en las hojas más jóvenes.
+        Curling de las hojas: Las hojas afectadas tienden a rizarse hacia arriba o hacia abajo.
+        Reducción en el crecimiento y desarrollo: Las plantas infectadas pueden experimentar 
+        un crecimiento lento y un desarrollo deficiente.
+        Floración y fructificación reducidas: La enfermedad puede afectar negativamente la 
+        capacidad de la planta para florecer y producir frutos de manera normal, lo que 
+        resulta en una menor producción y calidad de los tomates.
+        Síntomas adicionales: En algunos casos, se pueden observar síntomas como deformación 
+        de los frutos, manchas necróticas en las hojas y muerte prematura de la planta.
+        </p>
+      <br>
+      <img src="{{ url_for('static', filename='images/tratamiento.png') }}" alt="AgroScan" class="AgroScan_logo">
+
+      <br>
+      <p class="p_aux" >Control de insectos vectores: Dado que la enfermedad se transmite
+        principalmente a través de moscas blancas, es importante implementar medidas de 
+        control de estas plagas, como el uso de insecticidas específicos y trampas pegajosas.
+        Uso de variedades resistentes: Algunas variedades de tomate han sido desarrolladas 
+        para ser resistentes al TYLCV. Al seleccionar variedades para el cultivo, elige 
+        aquellas que sean resistentes a esta enfermedad siempre que sea posible.
+        Eliminación de plantas infectadas: Retira y destruye adecuadamente las plantas 
+        infectadas para evitar la propagación del virus a otras plantas sanas en el área.
+        Control de malezas y residuos vegetales: Mantén el área alrededor de tus plantas de 
+        tomate libre de malezas y residuos vegetales, ya que pueden servir como reservorios 
+        del virus y aumentar el riesgo de infección.
+        Monitoreo regular: Realiza inspecciones periódicas de tus plantas de tomate para 
+        detectar signos tempranos de infección y tomar medidas preventivas o correctivas 
+        de manera oportuna.
+        </p>
+      <br>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
