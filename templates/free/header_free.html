@@ -6,21 +6,21 @@
   rel="stylesheet">
 <script src="https://kit.fontawesome.com/26112bca0b.js" crossorigin="anonymous"></script>
 
-<nav class="navbar">
+<nav class="navbar"> 
 
   <div class="logo">
-    <img src="{{ url_for('static', filename='images/tandia_logo_w.png') }}" alt="Logo de la empresa">
+    <img src="{{ url_for('static', filename='images/AgroScanB.png') }}" alt="Logo de la empresa">
   </div>
 
   <div class="menu">
     <ul>
       <li><a>Aun no</a></li>
-      <li><a href="">Determinar Enfermedad</a>
+      <li><a href="">Plantaciones</a>
         <ul>
-          <li><a href="{{ url_for('generator_coffe') }}"> IA Coffe</a></li>
-          <li><a href="{{ url_for('generator_tomato') }}"> IA Tomato</a></li>
-          <li><a href="{{ url_for('generator_corn') }}"> IA Corn</a></li>
-          <li><a href="{{ url_for('generator_rice') }}"> IA Rice</a></li>
+          <li><a href="{{ url_for('generator_coffe') }}">Café</a></li>
+          <li><a href="{{ url_for('generator_tomato') }}">Tomate</a></li>
+          <li><a href="{{ url_for('generator_corn') }}">Maiz</a></li>
+          <li><a href="{{ url_for('generator_rice') }}">Arroz</a></li>
         </ul>
       </li>
     </ul>
