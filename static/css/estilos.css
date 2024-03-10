@@ -431,17 +431,16 @@ footer {
 /* Estilos para el título del banner */
 .banner-content h2 {
   font-size: 24px;
-  /* Tamaño de fuente del título */
   margin-bottom: 10px;
-  /* Espaciado inferior del título */
+  color: rgb(0, 99, 67);
+  font-weight: 600;
 }
 
 /* Estilos para el texto motivacional */
 .banner-content p {
   font-size: 16px;
-  /* Tamaño de fuente del texto */
   line-height: 1.5;
-  /* Altura de línea para mejorar la legibilidad */
+  font-weight: 600;
 }
 
 /* Estilos para la imagen del banner */
@@ -458,83 +457,128 @@ footer {
 }
 
 .sections {
-  width: 95%;
-  margin: 40px auto; /* Agrega margen automático a los lados para centrar */
+  width: 95%;  
+  margin: 20px auto;
   display: flex;
-  justify-content: space-between; /* Distribuye el espacio entre las tarjetas */
-} 
+  justify-content: space-between;
+}
 
 
 .tarjeta,
 .tarjeta1,
-.tarjeta2, 
+.tarjeta2,
 .tarjeta3 {
   flex: 1;
-  padding: 10px; /* Agrega relleno para separar el contenido del borde */
-  background-color: rgb(153, 103, 103);
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* Añade margen izquierdo a la primera tarjeta */
 .tarjeta1 {
   margin-right: 20px;
+  background-image: url("../images/cafe.png");
+  background-color: rgba(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Añade margen derecho a la tercera tarjeta */
 .tarjeta2 {
   margin-right: 20px;
+  background-image: url("../images/maiz.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .tarjeta3 {
   margin-right: 20px;
+  background-image: url("../images/arroz.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.tarjeta {
+  background-image: url("../images/tomate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.tarjeta ul>li,
+.tarjeta1 ul>li,
+.tarjeta2 ul>li,
+.tarjeta3 ul>li {
+  list-style: none;
+}
 
 
 /*Prediction Coffe*/
 /* Estilo para el div .predecir */
 .predecir {
-  padding: 10px; /* Espaciado interno para el contenido */
-  background-color: #fff; /* Color de fondo del div */
-  border: 1px solid #ccc; /* Borde del div */
-  border-radius: 5px; /* Bordes redondeados */
-  margin: 60px 50px; /* Margen alrededor del div */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el div */
-  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 10px;
+  /* Espaciado interno para el contenido */
+  background-color: #fff;
+  /* Color de fondo del div */
+  border: 1px solid #ccc;
+  /* Borde del div */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  margin: 60px 50px;
+  /* Margen alrededor del div */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra para el div */
+  text-align: center;
+  /* Centra el contenido horizontalmente */
 }
 
 /* Estilo para el título "Predicción de Enfermedades en Hojas de Café" */
 .predecir h1 {
-  font-size: 20px; /* Tamaño de fuente para el título */
+  font-size: 20px;
+  /* Tamaño de fuente para el título */
   font-weight: bold;
-  margin-bottom: 20px; /* Espacio inferior para separar el título del formulario */
+  margin-bottom: 20px;
+  /* Espacio inferior para separar el título del formulario */
 }
 
 /* Estilo para el formulario */
 .predecir form {
-  margin-top: 20px; /* Espacio superior para separar el formulario del título */
+  margin-top: 20px;
+  /* Espacio superior para separar el formulario del título */
 }
 
 /* Estilo para los botones del formulario (en este caso, el botón "Predecir") */
 .predecir input[type="submit"] {
-  background-color: rgb(70, 70, 70); /* Cambia el color de fondo del botón a tu preferencia */
-  border: none; /* Elimina el borde del botón */
+  background-color: rgb(70, 70, 70);
+  /* Cambia el color de fondo del botón a tu preferencia */
+  border: none;
+  /* Elimina el borde del botón */
   color: rgb(250, 250, 250);
   font-weight: bold;
-  padding: 10px 20px; /* Espaciado interno del botón */
-  font-size: 16px; /* Tamaño de fuente del botón */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  border-radius: 5px; /* Bordes redondeados del botón */
+  padding: 10px 20px;
+  /* Espaciado interno del botón */
+  font-size: 16px;
+  /* Tamaño de fuente del botón */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px;
+  /* Bordes redondeados del botón */
 }
 
 /* Estilo para la imagen resultante */
 .predecir img#image {
-  max-width: 50%; /* Asegura que la imagen no supere el ancho del contenedor */
-  margin-top: 20px; /* Espacio superior para separar la imagen del resultado */
+  max-width: 300px;
+  min-height: 300px;
+  margin-top: 20px;
 }
 
 /* Estilo para el resultado (por ejemplo, "result") */
 .predecir #result {
-  font-size: 16px; /* Tamaño de fuente para el resultado */
+  font-size: 16px;
+  /* Tamaño de fuente para el resultado */
   font-weight: bold;
-  margin-top: 20px; /* Espacio superior para separar el resultado del formulario */
+  margin-top: 20px;
+  /* Espacio superior para separar el resultado del formulario */
 }
