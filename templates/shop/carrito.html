@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilostienda.css') }}">
+  <title>AgroScan</title>
+</head>
+
+<body>
+    {% include 'free/header_free.html' %}
+
+    <div class="titulo">
+        <a>Carrito</a>
+    </div>
+    <div class="productos_carrito">
+        <table>
+            <tr class="cabecera">
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Eliminar</th>
+            </tr>
+            {% if productos is defined %}
+                {% for i in productos %}
+                    <tr>
+                        <th>
+                            <img src="{{ url_for('static',filename='images/'+ i[1]) }}">
+                        </th>
+                        <th>
+                            <p>{{ i[2] }}</p>
+                        </th>
+                        <th>
+                            <p>S/.{{ i[3] }}</p>
+                        </th>
+                        <th>
+                            <a href="{{ url_for('eliminar_carrito', producto_id= i[0] ) }}">
+                                <img src="{{ url_for('static',filename='images/eliminar.png') }}">
+                            </a>
+                        </th>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </table>
+    </div>
+    {% include 'free/footer_free.html' %}
+</body>
+
+</html>

@@ -3,13 +3,15 @@ import mysql
 import mysql.connector
 from cnx import DB_CONFIG
 from PIL import Image
+import tienda as tn
+from tienda import carrito
 
 from prediction import predict_coffe, predict_corn, predict_rice, predict_tomato
 
-
-
 app = Flask(__name__)
 app.secret_key = 'tu_clave_secreta'
+
+carro = carrito()
 
 #Inicio Aplicacion
 @app.route('/')
@@ -43,7 +45,6 @@ def menu():
     password = session.get('password')
 
     return render_template('free/principal_free.html',user_id=user_id,first_name=first_name,last_name=last_name,phone=phone,email=email,password=password)
-
 
 #Redireccion Generator Coffe
 @app.route('/store')
@@ -170,6 +171,36 @@ def result_leaf_scald():
 @app.route('/rice_result_narrow_brown_spot')
 def result_narrow_brown_spot():
     return render_template('free/narrow_brown_spot.html')
+
+#Redirección Tienda
+@app.route('/shop')
+def shop():
+    productos = tn.convertir()
+    cantidad = len(carro.items)
+    return render_template('shop/shopMain.html', productos = productos, cantidad = cantidad)
+
+@app.route('/shop_cat/<string:categoria>')
+def shop_cat(categoria):
+    productos = tn.listar_categoria(categoria)
+    cantidad = len(carro.items)
+    return render_template('shop/shopMain.html', productos = productos, cantidad = cantidad)
+
+@app.route('/agregar_carrito/<int:producto_id>', methods=['GET','POST'])
+def agregar_carrito(producto_id):
+    carro.agregar(producto_id)
+    items = carro.mostrar_carrito()
+    print(items)
+    return redirect(url_for('shop'))
+
+@app.route('/mostrar_carrito')
+def mostrar_carrito():
+    productos_carrito = carro.mostrar_carrito()
+    return render_template('shop/carrito.html', productos = productos_carrito)
+
+@app.route('/eliminar_de_carrito/<int:producto_id>')
+def eliminar_carrito(producto_id):
+    carro.eliminar(producto_id)
+    return redirect(url_for('mostrar_carrito'))
 
 #Funcion Crear Usuario
 @app.route('/save_profile', methods=['POST'])

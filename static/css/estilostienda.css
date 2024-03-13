@@ -1,0 +1,144 @@
+.titulo{
+    font-size: 50px;
+    font-family: 'Montserrat';
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.carrito{
+    display: flex;
+    font-size: 25px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.carrito img{
+    width: 40px;
+    height: 40px;   
+}
+
+.carrito img:hover{
+    cursor: pointer;
+}
+
+.carrito a{
+    margin-left: 5px;
+}
+
+.carrito a:hover{
+    cursor: pointer;
+}
+
+.carrito p{
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+}
+
+.carrito p:hover{
+    cursor: pointer;
+}
+
+.productos{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.producto{
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+}
+
+.producto img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.producto a{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.producto button{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    background-color: rgba(11, 166, 126);
+    border-radius: 5px;
+    padding-bottom: 3px;
+}
+
+.categorias{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(11, 166, 126);
+    width: 100vh;
+    margin: 0 auto;
+}
+
+.categorias ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.categorias li{
+    position: relative;
+}
+
+.categorias a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.categorias a:hover {
+    background-color: rgb(9, 108, 83);
+}
+
+.productos_carrito{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.productos_carrito table{
+    border-collapse: collapse;
+}
+
+.productos_carrito th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: auto;
+}
+
+.productos_carrito img{
+    width: 100px;
+    height: 100px;
+}
+
+.eliminar{
+    width: 50px;
+    height: 50px;
+}

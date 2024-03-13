@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/AgroScan_icon.png') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilostienda.css') }}">
+  <title>AgroScan</title>
+</head>
+
+<body>
+  {% include 'free/header_free.html' %}
+
+  <div class="titulo">
+    <a>Tienda</a>
+    <div class="carrito">
+      <a href="{{ url_for('mostrar_carrito') }}">
+        <img src="{{ url_for('static', filename='images/carrito.png') }}">
+        <a>Carrito</a>
+        {% if cantidad is defined %}
+          <p>{{ cantidad }}</p>
+        {% endif %}
+      </a>
+    </div>
+  </div>
+  <div class="categorias">
+    <ul>
+      <li>
+        <a href="{{ url_for('shop_cat', categoria = 'arroz' ) }}">Para Arroz</a>
+      </li>
+      <li>
+        <a href="{{ url_for('shop_cat', categoria = 'cafe' ) }}">Para Café</a>
+      </li>
+      <li>
+        <a href="{{ url_for('shop_cat', categoria = 'tomate' ) }}">Para Tomate</a>
+      </li>
+      <li>
+        <a href="{{ url_for('shop_cat', categoria = 'maiz' ) }}">Para Maíz</a>
+      </li>
+    </ul>
+  </div>
+  <div class="productos">
+  {% if productos is defined %}
+    {% for i in productos %}
+      <form class="producto" action="/agregar_carrito/{{ i[0] }}" method="post">
+        <img src="{{ url_for('static',filename='images/'+ i[1]) }}">
+        <a>{{ i[2] }}</a>
+        <a>S/.{{ i[3] }}</a>
+        <button type="submit">Agregar</button>
+      </form>
+    {% endfor %}
+  {% endif %}
+  </div>
+  {% include 'free/footer_free.html' %}
+</body>
+
+</html>

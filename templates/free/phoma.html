@@ -27,14 +27,14 @@
         a las plantas de café, causando daños en las hojas, tallos y frutos</p>
       <br>
 
-      <div><a href="/store">Ir a la Tienda</a></div>
+      <div><a href="{{ url_for('filtrar_cat', categoria = 'cafe' ) }}">Ir a la Tienda</a></div>
     </div>
   </div>
 
   <div class="div_right">
     <div class="contenido">
 
-      <img src="{{ url_for('static', filename='images/sintomas.png') }}" alt="AgroScan" class="AgroScan_logo">
+      <img src="{{ url_for('shop_cat', categoria = 'arroz' ) }}" alt="AgroScan" class="AgroScan_logo">
 
       <br>
       <p class="p_aux" >•	Manchas de color marrón oscuro a casi negro en las hojas, tallos y frutos jóvenes.
